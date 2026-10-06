@@ -65,7 +65,7 @@
   function tickerHTML(k) {
     const tok = 1204332118 + Math.floor(k * 91374);
     const s = [`TOKENS QUEMADOS ${tok.toLocaleString('es-ES')} <b>▲</b>`, 'HUMANOS TECLEANDO: 0', `AGENTES ONLINE ${pad(412 + (k % 3000), 4)}`,
-      `FLAGS ${pad(3882 + Math.floor(k / 3), 5)} <b>▲</b>`, '€/FLAG 0,04 <b>▼</b>', 'NEMOTRON 3 <b>▲</b>', 'QWEN3 <b>▲</b>', 'GLM-5 <b>▲</b>', 'MISTRAL <b>▲</b>',
+      `FLAGS ${pad(3882 + Math.floor(k / 3), 5)} <b>▲</b>`, '€/FLAG 0,04 <b>▼</b>', 'KIMI K2.6 <b>▲</b>', 'QWEN3 <b>▲</b>', 'GLM-5 <b>▲</b>', 'MISTRAL <b>▲</b>',
       'KEVIN-8B <b>▲</b> 31,0%', 'CAJAS NEGRAS: 0', 'TEMPORADA 26/27', 'STOP TYPING → ORCHESTRATE', 'LICENCIA: APACHE 2.0', "DON'T PLAY → <b>DEPLOY</b>"].join('  ●  ') + '  ●  ';
     return s + s;
   }

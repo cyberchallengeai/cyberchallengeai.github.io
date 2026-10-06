@@ -9,7 +9,7 @@
   const C = { prompt: '#6e6e6a', llm: '#f2f2ee', act: '#5fd35f', flag: '#00ef00', ev: '#3a3a37' };
   const KIND = { prompt: 'Prompt', llm: 'Respuesta del modelo', act: 'Acción del agente', flag: 'Flag capturada', ev: 'Evento' };
   const STEPS = [
-    ['ev', 'Agente desplegado', 'presupuesto €2,00 · 60 pasos', { Evento: 'Entorno aislado listo.\nModelo: Nemotron 3 Nano · presupuesto €2,00.' }],
+    ['ev', 'Agente desplegado', 'presupuesto €2,00 · 60 pasos', { Evento: 'Entorno aislado listo.\nModelo: Qwen3 32B · presupuesto €2,00.' }],
     ['prompt', 'Enunciado del reto', 'reto 07 · dificultad media', { Prompt: 'Encuentra la flag del reto 07.\nTienes herramientas y un presupuesto limitado.' }],
     ['llm', 'Plan inicial', '3 hipótesis · orden por coste', { Razonamiento: 'Primero entender, luego actuar.\nOrdeno tres hipótesis de la más barata a la más cara.', 'Siguiente paso': 'Reunir contexto con la herramienta más barata.' }],
     ['act', 'tool_call #01', 'reunir contexto', { 'Acción': 'tool_call #01 · modo lectura', 'Resultado': 'Contexto obtenido · 1,2 kB' }],

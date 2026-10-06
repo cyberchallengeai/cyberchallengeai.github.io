@@ -181,14 +181,14 @@
 
   /* ================= ARSENAL: loadout builder ================= */
   const MODELS = {
-    nemotron: { slug: 'nemotron-3', sizes: [['Nano 31B', 31.6], ['Super 120B', 120], ['Ultra 550B', 550]], def: 0, lic: 'NVIDIA Open Model' },
+    kimi: { slug: 'kimi-k2.6', sizes: [['1T', 1000]], def: 0, lic: 'MIT modificada' },
     qwen: { slug: 'qwen3', sizes: [['8B', 8], ['32B', 32], ['235B', 235]], def: 1, lic: 'Apache 2.0' },
     glm: { slug: 'glm-5', sizes: [['744B', 744]], def: 0, lic: 'MIT' },
     mistral: { slug: 'mistral-small-3', sizes: [['24B', 24]], def: 0, lic: 'Apache 2.0' },
   };
   const arms = document.querySelectorAll('.arm');
   if (arms.length) {
-    const st = { m: 'nemotron', s: 0, q: 4, a: 64 };
+    const st = { m: 'kimi', s: 0, q: 4, a: 64 };
     const sizes = $('#sizes'), vram = $('#vram'), fits = $('#fits'), cmd = $('#cmd');
     const tier = (gb) => gb <= 16 ? 'Cabe en <b>1 GPU de 16 GB</b>. La del portátil gamer.' : gb <= 24 ? 'Cabe en <b>1 GPU de 24 GB</b>. La prestada del taller.'
       : gb <= 48 ? 'Pide <b>2 GPU de 24 GB</b>. Bridas incluidas.' : gb <= 80 ? 'Cabe en <b>1 GPU de 80 GB</b>. Hierro de verdad.'
