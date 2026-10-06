@@ -312,7 +312,7 @@ details p { color: var(--fg2); padding-bottom: 22px; max-width: 60ch; }
 .who { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 60px; }
 .who-c { display: flex; flex-direction: column; gap: 10px; border: 1px solid var(--line); background: rgba(5,5,5,.8); padding: 28px; transition: border-color .2s, transform .2s; }
 .who-c:hover { border-color: var(--g); transform: translateY(-4px); }
-.who-c .mono { font-size: 12px; color: var(--fg2); }
+.who-c p.mono { font-size: 12px; color: var(--fg2); }
 .who-c h3 { font-size: clamp(28px, 2.6vw, 38px); font-weight: 600; letter-spacing: -.02em; line-height: 1; }
 .who-c p:not(.mono) { color: var(--fg2); flex: 1; }
 .who-c .btn { align-self: flex-start; margin-top: 10px; }
@@ -460,3 +460,9 @@ body.beat .hero-vid { filter: brightness(1.18) contrast(1.05); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal-words .wd { opacity: 1; transform: none; }
 }
+
+/* ---------- keyboard focus ---------- */
+:focus-visible { outline: 2px solid var(--g); outline-offset: 3px; }
+.btn-g:focus-visible { outline-color: #fff; }
+summary:focus-visible { outline-offset: -2px; }
+@media (hover: none), (pointer: coarse) { #cursor { display: none; } }
